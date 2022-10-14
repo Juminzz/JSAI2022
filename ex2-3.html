@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .b1>li{
+            color: blue;
+        }
+        .c1>li{
+            color: green;
+        }
+        .s1>li{
+            color: blueviolet;
+        }
+        .s2>li{
+            color: deepskyblue;
+        }
+        .v1>li{
+            background-color: yellow;
+        }
+        .s3>li{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+   <h2>CAFE</h2>
+   <ul style="list-style-type: none" class="b1">
+       <li>Coffe</li>
+       <li>Tea</li>
+       <ul class="v1">
+            <li>Black tea</li>
+           <li>Green tea</li>
+            <ul class="c1">
+                <li>China</li>
+                <li>Africa</li>
+            </ul>
+            
+       </ul>
+       <li>Milk</li>
+   </ul>
+   
+   <h2>CAFE</h2>
+      <ol class="s1">
+       <li>Coffe</li>
+       <li>Tea</li>
+   <ol style="list-style-type: lower-roman" class="s3">
+            <li>Black tea</li>
+            <li>Green tea</li>
+            <ol class="s2">
+                <li>China</li>
+                <li>Africa</li>
+            </ol>
+
+       </ol>
+       <li>Milk</li>
+   </ol>
+   <a href="index.html"><input type="button" value="홈으로가기"></a>
+</body>
+</html>

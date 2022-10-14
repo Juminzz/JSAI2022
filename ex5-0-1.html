@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>말줄임 기호</title>
+    <style>
+        .notice h3{
+            width: 200px;
+            overflow: hidden;
+            /* 글자가 넘쳤을때 사라짐 */
+            white-space: nowrap;
+            /* 띄어쓰기 1칸으로 표시 줄바꿈없음 */
+            text-overflow: ellipsis;
+            /* 말줄임표: width 값에 따라말이길어지면...으로 표현됨 */
+            border: 1px solid #aaa;
+        }
+    </style>
+</head>
+<body>
+    <ul class="notice">
+        <li>
+            <h3>시간 배분을 위하여 현명한 판단을 바랍니다.</h3>
+        </li>
+        <li>
+            <h3>욕심껏 내용을 채우는 것도 좋겠습니다.</h3>
+        </li>
+        <li>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+        </li>
+    </ul><br><br><br>
+    <a href="index.html">
+    <input type="button" value="홈으로가기"></a>    
+    
+</body>
+</html>

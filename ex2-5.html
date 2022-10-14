@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>입력 양식 만들기</title>
+</head>
+<body>
+   <h2>가입양식</h2>
+    <form action="#">
+        <label for="name">성함 :</label> 
+        <input type="text" id=name size="4" pattern="[가-힣]{3}{[가-힣]}{2}"> <br> <br>        <!-- pattern 로그인 만족하면 양식이 일치함 {[가-힣]} {}는 3도되고 2되는 or형식--> 
+        <label for="number">전화번호 :</label>
+        <input type="tel" id=number size="12" minlength="11" maxlength="11" pattern="[0-9]{10}"> <br> <br>
+        <label for="email">이메일 주소 :</label>
+        <input type="email" id=email pattern=".+@naver\.com" title="네이버 이메일주소를 입력해주세요"> <br><br>
+        <label for="addres">주소 :</label>
+        <input type="number" id=address> <br> <br>
+        <label for="my_num">주민등록번호 :</label> 
+        <input type="text" name=my_num size="6" minlength="6"  maxlength="6"
+        pattern="[0-9]+"> -
+        <input type="password" name=my_pw size="7" minlength="7" maxlength="7" pattern="[0-9]+"> <br><br>
+        <label for="pw">비밀번호 제한 :</label>
+        <input type="password" name="pw" size="16" minlength="10" maxlength="17" pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Z\d$@$!%*#?&]{1,10}$"><br><br>
+        <label for="say">하고싶은말 :</label><br>
+        <textarea></textarea><br> <br>
+        <label for="date">제출 날짜 :</label> 
+        <input type="date" id=date> <br><br>
+        <input type="submit" id=submit>
+        </form><br>
+        <a href="index.html">
+        <input type="button" value="홈으로가기"></a>
+</body>
+</html>

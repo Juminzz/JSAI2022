@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+    <style>
+        .a0{
+            background-color: #e6b6b6;
+            top:0px;
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            border-radius: 50px;
+            animation: run 4s infinite;
+            animation-direction: normal;
+            }
+        .a1{
+            width: 0px;
+            height: 0px;
+            border-bottom: 360px solid skyblue;
+            border-left: 0px solid skyblue;
+            border-right: 360px solid transparent;
+            border-top: 180px solid transparent;
+            transform: translate(0px, 240px);
+            }
+        @keyframes run{
+            0%{
+                transform: translate(0px,300px);
+            }
+            25%{
+                transform: translate(0px,490px)
+            }
+            100%{
+                transform: translate(510px,1000px);
+            }
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="a0"></div>
+    <div class="a1"></div>
+</body>
+</html>

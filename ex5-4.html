@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>가상선택자4</title>
+    <style>
+        span :only-of-type{
+        /* only-of-type은 유일한(딱 한번만쓴) 태그 지정 */
+        /* span은 스페이스바 한번해주고 span 안에있는 유일한 태그 지정 */
+            color: red;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <span>
+        <div>난 div 태그의 첫 번째야</div>
+        <p>난 유일한 p 태그야</p>
+        <div>난 div 태그의 두 번째야</div>
+        <div>난 div 태그의 세 번째야
+            <i>난 유일한 i 태그야</i>
+            <em>난 em 태그의 첫 번째야</em>
+            <em>난 em 태그의 두 번째야</em>
+<!-- i와 em의 차이점은 em은 음성인식이 가능하다 -->
+       </div>
+    </span><br>
+    <a href="index.html">
+    <input type="button" value="홈으로가기"></a>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>focus 가상선택자</title>
+    <style>
+        .red-input:focus{
+            background-color: springgreen;
+            color: red;
+        }
+        .blue-input:focus{
+            background-color: springgreen;
+            color: blue;
+        }
+        .red-input:hover{
+            background-color: yellow;
+            color: red;
+        }
+        .blue-input:hover{
+            background-color: bisque;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" class="red-input" value="클릭하면 빨갛게 됩니다.">
+    <input type="text" class="blue-input" value="클릭하면 파랗게 됩니다."><br><br>
+    <a href="index.html">
+    <input type="button" value="홈으로가기"></a>
+</body>
+</html>

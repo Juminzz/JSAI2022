@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>복합선택자</title>
+    <style>
+        h1{
+            text-align: justify;
+        }
+         span{
+            text-align: justify;
+        }
+/* p태그안에 있는 c1 = p.c1  ,는 or역할, 클래스선택자를 (공백x) 붙이면 AND, 띄어쓰기를 하면 하위선택자*/
+        p.c1, #p1{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <span>Heading line test</span>
+    <span></span>
+    <div class="c1">
+        <p>child 1</p>
+        <p>child 2</p>
+        <div>
+            <p class="c1">grandchild</p>
+        </div>
+    </div>
+    <p id="p1">neighborhood child</p>
+     <a href="index.html">
+    <input type="button" value="홈으로가기"></a>
+</body>
+</html>

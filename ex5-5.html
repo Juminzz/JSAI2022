@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>둥근 테두리</title>
+    <style>
+        span[class]{
+            display: inline-block;
+/*         display가 없으면 작아지고 깨짐 */
+            text-align: center;
+            line-height: 100px;
+        }
+        .radius1{
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            background-color: aqua;
+        /* 값을주면 왼쪽위에서 시계방향으로 깎임 */
+        }
+        .radius2{
+            width: 200px;
+            height: 100px;
+            border-radius: 100px 100px 0 0;
+            /* 100px 만큼 깎는다. */
+            background-color: brown;
+        /* 값을주면 왼쪽위에서 시계방향으로 깎임 */
+        }
+        .radius3{
+            background-color: cornflowerblue;
+            width: 100px;
+            height: 100px;
+            border-radius: 200px 0 0 0;
+         /* 값을주면 왼쪽위에서 시계방향으로 깎임 */
+        }
+        .radius4{
+            background-color: darkseagreen;
+            width: 200px;
+            height: 100px;
+            border-radius: 40px 15px 40px 15px;
+        /* 값을주면 왼쪽위에서 시계방향으로 깎임 */
+        }
+    </style>
+</head>
+<body>
+    <span class="radius1">radius1</span>
+    <span class="radius2">radius2</span>
+    <span class="radius3">radius3</span>
+    <span class="radius4">radius4</span><br><br><br>
+    <a href="index.html">
+    <input type="button" value="홈으로가기"></a>
+</body>
+</html>

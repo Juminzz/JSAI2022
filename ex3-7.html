@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>블록과 인라인</title>
+    <style>
+/*  . = class      */
+        .bk div{
+            background-color: beige;
+            border: thick double red;   /* 굵기 선의종류 색 */
+            font-size: 20px;
+            text-align: center;
+            display: inline;
+        }
+        .in span{ 
+            background-color: #e9dcdd;
+            border: 1px solid blue;
+            display: block;
+        }
+      /* color picker 단축키 컨트롤+알트+k */
+    </style>
+</head>
+<body>
+    <div class="bk">
+        <div>블록</div>
+        <div>블록</div>
+        <div>블록</div>
+<!-- div는 따로쓰면 줄바꿈으로 나옴 (블록 요소) -->
+    </div>
+    <div class="in">
+        <span>인라인</span>
+        <span>인라인</span>
+        <span>인라인</span><br>
+<!-- span은 따로 써도 한줄로 나옴 (인라인 요소) -->
+    <a href="index.html">
+    <input type="button" value="홈으로가기"></a>
+    </div>
+</body>
+</html>

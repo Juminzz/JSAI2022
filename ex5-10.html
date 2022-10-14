@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>이동</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+        }
+        .container{
+            border: 4px solid tomato;
+            margin: 50px;
+            border-radius: 5px;
+        }
+        .container div{
+            background-color: aqua;
+            background-color: 5px;
+            transition: 1s ease-in-out;
+        }
+        .transformed1{
+            background-color: #ebfac1;
+            border-radius: 5px;
+            transition: transform 1s ease-in-out;
+        }
+        .transformed1:hover{
+            transform: scaleX(0.5);
+        }
+        .transformed2{
+            background-color: #a5eda5;
+            border-radius: 5px;
+            transition: transform 1s ease-in-out;
+        }
+        .transformed2:hover{
+            transform: scaleY(2);
+        }
+        .transformed3{
+            background-color: #ceb9f3;
+            border-radius: 5px;
+            transition: transform 1s ease-in-out;
+        }
+        .transformed3:hover{
+            transform: scaleY(0.5);
+        }
+        .transformed4{
+            background-color: #e69e89;
+            border-radius: 5px;
+            transition: transform 1s ease-in-out;
+        }
+        .transformed4:hover{
+            transform: scale(0.5, 1.5);
+        }#c1d85e
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="transformed1">transformd</div>
+    </div>
+    <div class="container">
+        <div class="transformed2">transformd</div>
+    </div>
+    <div class="container">
+        <div class="transformed3">transformd</div>
+    </div>
+    <div class="container">
+        <div class="transformed4">transformd</div>
+    </div>
+    <a href="index.html">
+    <input type="button" value="홈으로가기"></a>
+</body>
+</html>

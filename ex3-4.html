@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>아이디 선택자</title>
+<!--id 선택자는 #선택자 {} 이다    -->
+    <style>
+        body{
+            background-color: yellow;
+        }
+        .d1{
+            background-color: antiquewhite;
+        }
+        #d2{
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+   <div class="d1">
+    <div>이곳은 1줄 입니다.</div>
+    <div>이곳은 2줄 입니다.</div>
+    <div id="d2">이곳은 3줄 입니다.</div>
+    <div>이곳은 4줄 입니다.</div>
+    </div> <br>
+     <a href="index.html">
+    <input type="button" value="홈으로가기"></a>
+</body>
+</html>
+
+
+<!-- CSS 선택자 순위
+전체 선택자 : 0 
+타입 선택자 : 1
+클래스 선택자 : 10
+아이디 선택자 : 100   아이디선택자가 순위가 제일 높다-->
