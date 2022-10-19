@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>프로필 연습</title>
+    <style>
+        body{
+            background-color: burlywood;
+            display: flex;
+            justify-content: center;
+            padding-top: 8rem;
+        }
+        .profile{
+            background-image: url(img/logo4.png);
+            width: 8rem;
+            height: 8rem;
+            background-size: 120px;
+            border-radius: 50%;
+            transform: translatey(50%);
+        }
+        .banner{
+            background-image: url(img/img3.png);
+            display: flex;
+            justify-content: center;
+        }
+        .card{
+            background-color: #fff;
+            max-width: 360px;
+            overflow: hidden;
+            border-radius: 2rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .name{
+            text-align: center;
+            padding-top: 60px;
+        }
+        .follow-btn{
+            display: flex;
+            justify-content: center;
+            padding: 0 2rem;
+        }
+        .follow-btn button{
+            background-color: burlywood;
+            border: none;
+            outline: none;
+            font-size: 15px;
+            padding: 10px;
+            width: 200px;
+            border-radius: 2rem;
+            margin-bottom: 10px;
+        }
+        .desc{
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="banner">
+            <div class="profile"></div>
+        </div>
+        <h2 class="name">Ju Min</h2>
+        <div class="follow-btn">
+            <button>Follow</button>
+        </div>
+        <div class="desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem necessitatibus doloribus cupiditate, sit libero aut, voluptate molestias. Possimus, reiciendis, omnis?
+        </div>
+    </div>
+</body>
+</html>

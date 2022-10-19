@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrom">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뉴플렉스 만들기(로그인)</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <style>
+        .login-title{
+            text-align: center;
+        }
+        .login-title__maintext{
+            font-size: 2.5rem;
+            color: var(--purple);
+        }
+        .login-title__subtext{
+            font-size: 0.9rem;
+            font-weight: 100;
+        }
+        html,
+        body{
+            overflow: hidden;
+        }
+        .login-form{
+            display: flex;
+            flex-direction: column;
+            margin: 1.5rem;
+        }
+        .login-form input{
+            padding: 15px 0;
+            margin: 0 10px;;
+            border: none;
+            outline: none;
+            appearance: none;
+            background-color: var(--background-purple);
+            font-size: 1em;
+        }
+        .login-form input:not([type="submit"]){
+            color: #fff;
+            border-bottom: 1px solid var(--border);
+            transition: border-color 0.3s ease-in-out;
+             /* 클릭하면 0.3초 이후에 밑에 줄이 진해짐  */
+        }
+        .login-form input:focus{
+            border-color: #fff;
+            /* 클릭하면 0.3초 이후에 밑에 줄이 진해짐  */
+        }
+        .login-form input[type="submit"]{
+            color: #fff;
+            background-color: var(--darkpurple);
+            border-radius: 20px;
+            margin-top: 2rem;
+            transition: background-color 0.2 ease-in-out;
+            /* 눌렀을때 0.2초 후에 진한보라색으로 잠시변함 */
+        }
+        .login-form input[type="submit"]:active{
+            background-color: var(--purple);
+            /* 눌렀을때 0.2초 후에 진한보라색으로 잠시변함 */
+        }
+    </style>
+</head>
+<body>
+    <img src="./bg.png" alt="오류" class="login-img">
+    <div class="login-title">
+        <h1 class="login-title__maintext">Newflix</h1>
+        <p class="login-title__subtext">
+            새로운 OTT 뉴플릭스 등장! <br>
+            지금 가입하면 무료 !
+        </p>
+    </div>
+    <form action="#" class="login-form">
+        <input type="text" name="username" autocomplete="off" placeholder="ID" required autofocus>
+        <!-- required는 input에 들어가면 이 칸에 채워야 다음으로 넘어가는 코드 -->
+        <!-- autofocus 자동으로 커서가 이동해줌 -->
+        <!-- autocomplete 자동완성기능 off  -->
+        <input type="password" placeholder="PASSWORD" name="password" required>
+        <input type="submit" value="접속하기">
+    </form>
+</body>
+</html>

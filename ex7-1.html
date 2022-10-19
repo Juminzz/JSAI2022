@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>햄버거만들기</title>
+    <style>
+        :root{
+            --body-bg: #7a7adf;
+            --hamburger-bg: #7a7adf;
+        }
+        html,
+        body{
+            height: 100%;
+        }
+        body{
+            background: var(--body-bg);
+    /* var=변수 쓸때 앞에 --넣고 뒤에는 마음대로 쓰면됨 */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .hamburger-container{
+            display: inline-block;
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background: var(--hamburger-bg);
+        }
+        .hamburger{
+            width: 00px; /* 햄버거 컨테이너를 기준으로 넓이 100% */
+            height: 10px;
+            background: white;
+        }
+        .hamburger,
+        .hamburger::before,
+        .hamburger::after{
+            position: absolute;
+            width: 100%;
+            height: 10px;
+            transition: 0.5s;
+            background: white;
+        }
+        .hamburger::before,
+        .hamburger::after{
+            content: "";
+        }
+        .hamburger{
+            top: 50%;
+        }
+        .hamburger::before{
+            top:-30px;
+        }
+        .hamburger::after{
+            top: 30px;
+        }
+        .toggle:checked ~.hamburger::after{
+            top: 0; /* 부모인 햄버거를 기준으로 상단배치 */
+            transform: rotate(-180deg);
+        }
+        .toggle:checked ~.hamburger::before{
+            top: 0;
+            transform: rotate(-90deg);
+        }
+        .toggle:checked ~.hamburger{
+            background: var(--hamburger-bg);
+        }
+        .toggle{
+            opacity: 0;
+        }
+        .hamburger-title{
+            color: white;
+            font-size: 20px;
+            padding-bottom: 20px;
+        }
+        p{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <span class="hamburger-title">My hamburger</span>
+    <label>
+        <div class="hamburger-container">
+            <input class="toggle" type="checkbox">
+            <div class="hamburger"></div>
+        </div>
+    </label>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis laudantium libero praesentium, non earum, inventore. Minus quia iste neque earum reiciendis dignissimos quae dolore fugit sunt modi doloribus incidunt vitae ipsa, corporis error perspiciatis nobis quam unde fuga quas similique. Sed, quo? Architecto autem harum repudiandae magnam quidem, aliquam enim ea, ipsam ad ratione obcaecati consequatur totam. Amet quae labore doloribus, enim architecto quis dicta saepe id modi in beatae.</p>
+</body>
+</html>

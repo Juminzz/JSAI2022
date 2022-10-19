@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>프로필 예제</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
+    <style>
+        html,
+        body{
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        body{
+            display: flex;
+            background-color: #daf5ea;
+            flex-direction: column;
+        }
+        .section{
+            background-color: #fff;
+            width: 400px;
+            height: 800px;
+            border-radius: 20px;
+        }
+        .nav{
+            padding: 40px;
+        }
+        .article{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .profile{
+            width: 200px;
+            height: 200px;
+            background-image: url(img/logo4.png);
+            background-size: 200px;
+            border-radius: 50%;
+        }
+        .name{
+            padding: 0px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        p{
+            transform: translatey(-40px);
+            color: darkgray;
+        }
+        .follow-btn{
+            display: flex;
+            flex-direction: column;
+            padding: 0 2rem;
+        }
+        .follow-btn button{
+            background-color: #a9cef3;
+            border: none;
+            padding: 1rem;
+            width: 200px;
+            border-radius: 2rem;
+            color: #fff;
+            font-size: 15px;
+            margin-bottom: 40px;
+        }
+        .ul{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid #fff;
+        }
+        .nav2{
+            display: flex;
+            width: 300px;
+            height: 60px;
+            background-color: #fff;;
+            justify-content: center;
+            transform: translateX(50px);
+            margin-top: 40px;
+            border-radius: 50%;
+        }
+        .a1{
+            width: 40px;
+            height: 40px;
+            background-color: #9ecdea;
+            border-radius: 50%;
+            margin-top: 10px;
+            margin-right: 20px;
+            box-shadow: 0.5rem 0.5rem 1rem rgba(0,0,0,0.3);
+        }
+        .a2{
+            width: 40px;
+            height: 40px;
+            background-color: #c0dbfb;
+            border-radius: 50%;
+            margin-top: 10px;
+            margin-right: 20px;
+            box-shadow: 0.5rem 0.5rem 1rem rgba(0,0,0,0.3);
+        }
+        .a3{
+            width: 40px;
+            height: 40px;
+            background-color: #dec3d5;
+            border-radius: 50%;
+            margin-top: 10px; 
+            margin-right: 20px;
+            box-shadow: 0.5rem 0.5rem 1rem rgba(0,0,0,0.3);
+        }
+        .a4{
+            width: 40px;
+            height: 40px;
+            background-color: #cebbd2;
+            border-radius: 50%;
+            margin-top: 10px;
+            box-shadow: 0.5rem 0.5rem 1rem rgba(0,0,0,0.3);
+        }
+        .material-icons-outlined.md-36{ font-size: 30px;}
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div class="nav">
+            <span class="material-icons-outlined md-36">
+                menu
+        </span>
+        </div>
+        <div class="article">
+            <div class="profile"></div>
+            <h2 class="name">Ju Min</h2>
+            <p>UI/UX INTERACIVE DEVELOPER</p>
+            <div class="follow-btn">
+                <button>VIEW MORE</button>
+            </div>
+        </div>
+        <div class="ul">Visit My Facebook page <br><br>
+        justin4836@naver.com</div>
+        <div class="nav2">
+            <div class="a1"></div>
+            <div class="a2"></div>
+            <div class="a3"></div>
+            <div class="a4"></div>
+        </div>
+    </div>
+</body>
+</html>

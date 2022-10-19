@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>박스레이아웃</title>
+    <style>
+        /* html과 body의 높이를 전체화면에맞춤 */
+        html,
+        body{
+            height: 100%;
+        }
+        /* 전체박스를 가운데로 정렬 */
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header{
+            background-color: brown;
+            width: 310px;
+            height: 50px;
+            border-radius: 10px;
+            border-bottom: 10px;
+        }
+        main{
+             display: flex;
+        }
+        nav{
+            background-color: burlywood;
+            width: 100px;
+            height: 300px;
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+        article{
+            background-color: greenyellow;
+            width: 200px;
+            height: 300px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+        footer{
+            background-color: brown;
+            width: 310px;
+            height: 50px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header></header>
+            <main>
+                <nav></nav>
+                <article></article>
+            </main>
+        <footer></footer>
+    </div>
+</body>
+</html>

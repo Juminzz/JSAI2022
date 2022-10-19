@@ -1,0 +1,30 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap'); */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
+
+@import "./reset.css";
+@import "./variable.css";
+@import "./navigation-bar.css";
+@import "./media-query.css";
+*{
+    box-sizing: border-box;
+    /* 모든 요소를 화면안에 포함 시킨다  */
+}
+body{
+    /* font-family: 'Jua', sans-serif; */
+    background-color: var(--background-purple);
+    color: #fff;
+}
+.input{
+    border: none;
+    outline: none;
+    appearance: none;
+}
+.display-flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.position-relative{
+    position: relative;
+}

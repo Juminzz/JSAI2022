@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>JS 맛보기</title>
+    <link rel="stylesheet" href="style.css">
+<!--    <script src="jstest.js"></script>-->
+</head>
+<body>
+   <label for="btn">
+    <button type="button" id="btn" onclick="alert('반가워요')">1. 확인을 해주세요(alert)</button></label><br><br>
+    <input type="button" value="2.이름을 적어주세요(prompt)" onclick="prompt('이름을 적어주세요')"><br><br>
+    <button id="btn3" onclick="(function(){confirm('혼자있고 싶어요');
+    console.log('혼자있고싶다네요')}())">3.혼자있고 싶어요(confirm)</button><br><br>
+    <button id="btn3" onclick="alert(1234*5678)">4.1234+5678(계산)</button>
+            <!--문자='' 숫자=x    -->
+    <div><script>
+        document.write(Date());
+        // 날짜 시간 알려줌
+    </script></div>
+</body>
+</html>
