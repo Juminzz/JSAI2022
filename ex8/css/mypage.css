@@ -95,3 +95,7 @@
 .wishlist{
     padding: 0 20px 10px 20px;
 }
+.find-icon-clicked:hover{
+    font-weight: 600;
+    color: red;
+}
