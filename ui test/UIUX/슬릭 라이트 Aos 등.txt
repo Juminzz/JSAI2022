@@ -1,0 +1,11 @@
+lightgallery
+https://www.lightgalleryjs.com/
+
+slick
+https://kenwheeler.github.io/slick/
+
+Aos
+https://michalsnik.github.io/aos/
+
+flex
+https://studiomeal.com/archives/197
